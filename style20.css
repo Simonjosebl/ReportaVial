@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+/* Reset de estilos para asegurar consistencia en los navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Estilos del encabezado */
+.header {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo img {
+    max-width: 80px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.header h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header h1:hover {
+    transform: scale(1.05);
+}
+
+.main-nav ul {
+    list-style: none;
+}
+
+.main-nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.main-nav ul li a:hover {
+    color: #ff0000;
+}
+
+/* Estilos del contenido principal */
+.main-content {
+    padding: 20px 0;
+}
+
+.repair-status {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.repair-status h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.status-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.status-item {
+    width: calc(33.33% - 10px);
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.status-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.status-item p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    text-indent: 0;
+}

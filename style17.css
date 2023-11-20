@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0; /* Ajuste en el padding */
+    background-color: #f8f8f8;
+    color: #333;
+    display: flex; /* Para permitir el uso de flexbox */
+    flex-direction: column; /* Alinear elementos en columna */
+    min-height: 100vh; /* Para ocupar al menos el viewport */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #111;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.logo {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo img {
+    max-width: 80px; /* Ajusta el ancho máximo del logo */
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease; /* Añade una transición suave al logo */
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Efecto de escala al pasar el ratón */
+}
+
+
+.header-content h1 {
+    margin: 0;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.navigation ul li:first-child {
+    margin-left: auto;
+}
+h1 {
+    margin: 0;
+    font-size: 22px; /* Aumentar el tamaño del texto */
+    font-weight: 600; /* Añadir peso al texto */
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    color: #ffffff; /* Color del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+    transition: all 0.3s ease; /* Animación de transición */
+}
+
+h1 a {
+    text-decoration: none; /* Quitar subrayado del enlace */
+    color: inherit; /* Heredar el color del texto del h1 */
+}
+
+h1:hover {
+    transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+}
+/* Estilos para el formulario de reporte de huecos */
+.container {
+    flex: 1; /* Relleno para ocupar el espacio disponible */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    box-sizing: border-box; 
+    padding: 20px; /* Ajuste en el padding */
+}
+
+.reporte-huecos {
+    width: 90%;
+    max-width: 500px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.reporte-huecos h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="file"]:focus,
+textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 14px 0;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    flex-shrink: 0; /* Evitar que el footer se reduzca */
+    width: 100%; /* Ajuste en la anchura */
+}
+
+/* Estilos para mensajes de alerta */
+.alerta {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Estilos para alerta de éxito */
+.alert.success {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #4CAF50;
+    color: #4CAF50;
+    background-color: #E7F3E7;
+}
+
+/* Estilos para alerta de error */
+.alert.error {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #f44336;
+    color: #f44336;
+    background-color: #FFE7E7;
+}
